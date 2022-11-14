@@ -1,0 +1,28 @@
+#include <stdio.h>
+#define SIZE 10
+struct Node
+{    
+int data; 
+int next;
+};
+typedef int PtrNode;
+typedef PtrNode POS;
+typedef PtrNode LIST;
+struct Node cursor[SIZE];
+void InitCursor();
+POS CursorAllocation();
+void FreeCursor(int);
+void Insert(int,int);
+int IsLast(int);
+POS Find(int, LIST);
+POS FindPrevious(int, LIST);
+void Delete(int, LIST);
+void MakeEmpty(LIST);
+void Display();
+int main()
+{   
+LIST LI=-1;  
+POS PO;   
+int choice,position,dat,ch;
+printf("Enter 1 to continue");
+ scanf("%
